@@ -13,14 +13,14 @@ class JoyStick:
     hatY = 0       #方向键Y轴，hat[1]
     butA = 0       #A键，but[0]
     butB = 0       #B键，but[1]
-    butX = 0       #X键，but[3]
-    butY = 0       #Y键，but[4]
-    L1 = 0         #L1键，but[6]
-    R1 = 0         #R1键，but[7]
-    L2 = 0         #L2键，but[8]
-    R2 = 0         #R2键，but[9]
-    SELECT = 0     #SELECT键，but[10]
-    START = 0      #START键，but[11]
+    butX = 0       #X键，but[2]
+    butY = 0       #Y键，but[3]
+    L1 = 0         #L1键，but[4]
+    R1 = 0         #R1键，but[5]
+    L2 = 0         #L2键，but[6]
+    R2 = 0         #R2键，but[7]
+    SELECT = 0     #SELECT键，but[8]
+    START = 0      #START键，but[9]
     
     def __init__(self):
         pygame.init()
@@ -51,26 +51,26 @@ class JoyStick:
             if event.type == pygame.JOYBUTTONDOWN:
                 self.butA = self.joystick.get_button(0)
                 self.butB = self.joystick.get_button(1)
-                self.butX = self.joystick.get_button(3)
-                self.butY = self.joystick.get_button(4)
-                self.L1 = self.joystick.get_button(6)
-                self.R1 = self.joystick.get_button(7)
-                self.L2 = self.joystick.get_button(8)
-                self.R2 = self.joystick.get_button(9)
-                self.SELECT = self.joystick.get_button(10)
-                self.START = self.joystick.get_button(11)
+                self.butX = self.joystick.get_button(2)
+                self.butY = self.joystick.get_button(3)
+                self.L1 = self.joystick.get_button(4)
+                self.R1 = self.joystick.get_button(5)
+                self.L2 = self.joystick.get_button(6)
+                self.R2 = self.joystick.get_button(7)
+                self.SELECT = self.joystick.get_button(8)
+                self.START = self.joystick.get_button(9)
 
             if event.type == pygame.JOYBUTTONUP:
                 self.butA = self.joystick.get_button(0)
                 self.butB = self.joystick.get_button(1)
-                self.butX = self.joystick.get_button(3)
-                self.butY = self.joystick.get_button(4)
-                self.L1 = self.joystick.get_button(6)
-                self.R1 = self.joystick.get_button(7)
-                self.L2 = self.joystick.get_button(8)
-                self.R2 = self.joystick.get_button(9)
-                self.SELECT = self.joystick.get_button(10)
-                self.START = self.joystick.get_button(11)
+                self.butX = self.joystick.get_button(2)
+                self.butY = self.joystick.get_button(3)
+                self.L1 = self.joystick.get_button(4)
+                self.R1 = self.joystick.get_button(5)
+                self.L2 = self.joystick.get_button(6)
+                self.R2 = self.joystick.get_button(7)
+                self.SELECT = self.joystick.get_button(8)
+                self.START = self.joystick.get_button(9)
         
     def display(self):
         print('================')
