@@ -38,6 +38,7 @@ isrun = True
 def parse_opt(known=False):
     parser = argparse.ArgumentParser()
     # parser.add_argument('--debugs', type=bool, default=False, help='if debug info output in terminal ')
+    # usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0003-if00-port0
     parser.add_argument('--port', type=str, default='/dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0003-if00-port0', help='the models serial port receive data; example: '
                                                                                                                                                     '    Windows: COM3'
                                                                                                                                                     '    Linux: /dev/ttyUSB0')

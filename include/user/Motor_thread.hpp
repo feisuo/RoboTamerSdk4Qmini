@@ -21,10 +21,10 @@ struct SerialGroup {
 class MotorController {
 public:
     std::vector<SerialGroup> serialGroups = {
-        {"/dev/serial/by-id/usb-FTDI_USB__-__Serial_Converter_FT9CC6WH-if03-port0", {0,5}},
-        {"/dev/serial/by-id/usb-FTDI_USB__-__Serial_Converter_FT9CC6WH-if01-port0", {1,6}},
-        {"/dev/serial/by-id/usb-FTDI_USB__-__Serial_Converter_FT9CC6WH-if00-port0", {2, 3, 4}},
-        {"/dev/serial/by-id/usb-FTDI_USB__-__Serial_Converter_FT9CC6WH-if02-port0", {7, 8, 9}}
+        {"/dev/serial/by-id/usb-FTDI_USB__-__Serial_Converter_FTB5JTP9-if03-port0", {0,5}},
+        {"/dev/serial/by-id/usb-FTDI_USB__-__Serial_Converter_FTB5JTP9-if02-port0", {1,6}},
+        {"/dev/serial/by-id/usb-FTDI_USB__-__Serial_Converter_FTB5JTP9-if00-port0", {2, 3, 4}},
+        {"/dev/serial/by-id/usb-FTDI_USB__-__Serial_Converter_FTB5JTP9-if01-port0", {7, 8, 9}}
     };
     MotorController() {
         InitializeSerialPorts();
